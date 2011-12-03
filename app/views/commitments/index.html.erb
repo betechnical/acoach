@@ -1,4 +1,5 @@
-<% @commitments.each do|commitment| %>		
-	<%=commitment.goal%>
-<% end %>
-
+<ol>
+	<% @commitments.each do|commitment| %>
+		<li><%=commitment.goal%> <%=commitment.when%></li>
+	<% end %>
+</ol>
