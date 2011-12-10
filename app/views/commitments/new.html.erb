@@ -3,7 +3,6 @@
     <input placeholder="eat 5 pigs" name="commitment[goal]">
     </input>
     by
-    <input placeholder="tomorrow" name="commitment[when]">
-    </input>
+    <%= datetime_select :commitment, :when %>
     <button  type="submit" >Please </button>
   <% end %>
