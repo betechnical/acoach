@@ -1,4 +1,4 @@
-  <form method="post" action="commitments">
+  <%= form_tag :action => "create" do %>
     I am going to
     <input placeholder="eat 5 pigs" name="commitment[goal]">
     </input>
@@ -6,4 +6,4 @@
     <input placeholder="tomorrow" name="commitment[when]">
     </input>
     <button  type="submit" >Please </button>
-  </form>
+  <% end %>
