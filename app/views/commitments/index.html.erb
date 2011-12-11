@@ -2,4 +2,8 @@
 	<% @commitments.each do|commitment| %>
 		<li><%=commitment.goal%> <%=commitment.when%></li>
 	<% end %>
+	<% if @commitments.empty? %>
+		No commitments found. Why not commit to <%= link_to "creating", new_commitment_path %> one?
+	<% end %>
+	
 </ol>
