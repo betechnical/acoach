@@ -11,12 +11,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111211014129) do
+ActiveRecord::Schema.define(:version => 20111218003255) do
 
   create_table "commitments", :force => true do |t|
     t.string   "goal"
     t.datetime "when"
-    t.string   "phone"
+    t.integer  "user_id"
   end
 
   create_table "users", :force => true do |t|
